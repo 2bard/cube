@@ -68,8 +68,3 @@ view.onFrame = function(event){
 		cube.rect.fillColor = null;
 	}
 }
-
-$("a").hover( function(){cube.colour = new Color(Math.random(), Math.random(), Math.random()); });
-
-$("#sitename").hover( function(){cube.randomRotate();});
-
