@@ -25,8 +25,6 @@ Cube.prototype.connectCubes = function(rect1,rect2){
 		};
 	}
 
-
-
 Cube.prototype.clearConnects = function() {
 	for (var i = this.connects.length - 1; i >= 0; i--) {
 		this.connects[i].remove();
@@ -41,7 +39,6 @@ Cube.prototype.randomRotate = function() {
 Cube.prototype.rotate = function() {
 	this.rect.rotate(this.rotate_speed);
 	this.rect2.rotate(this.rotate_speed);
-	//this.rect2.position = new Point(this.rect2.position.x - 1, this.rect2.position.y - 1);
 	this.clearConnects();
 	this.connectCubes(this.rect,this.rect2);
 	this.rect.strokeColor = this.colour;
